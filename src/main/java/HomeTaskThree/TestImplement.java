@@ -89,6 +89,47 @@ public class TestImplement {
     }
 
 
+    public boolean checkSet(){
+        List<String> listEnteredParameters = new ArrayList<>();
+        System.out.println("Please write Set");
+        enteredString = inputDataFromConsole.getParameters();
+        listEnteredParameters = Arrays.asList(enteredString.split(","));
+        System.out.println("Please write value");
+        enteredStringSecond = inputDataFromConsole.getParameters();
+        if (!(listEnteredParameters.contains(enteredStringSecond))){
+            return false;
+        }
+
+        return true;
+    }
+
+    public boolean checkRange(){
+        List<String> listEnteredParameters = new ArrayList<>();
+        List<String> listEnteredParametersTwo = new ArrayList<>();
+        System.out.println("Please write Range");
+        enteredString = inputDataFromConsole.getParameters();
+        listEnteredParameters = Arrays.asList(enteredString.split(","));
+        for (String i:listEnteredParameters){
+            try {
+                int enter = Integer.parseInt(i);
+            }catch (NumberFormatException nfe){
+                System.err.println("Must be positive  digit");
+                throw new NumberFormatException();
+            }
+            listEnteredParametersTwo.add(i);
+
+            }
+
+        System.out.println("Please write value");
+        enteredStringSecond = inputDataFromConsole.getParameters();
+        if (!(listEnteredParameters.contains(enteredStringSecond))){
+            return false;
+        }
+
+        return true;
+    }
+
+
     public boolean isContinue(String enter) {
         return enter.equalsIgnoreCase("yes") || enter.equalsIgnoreCase("y");
 

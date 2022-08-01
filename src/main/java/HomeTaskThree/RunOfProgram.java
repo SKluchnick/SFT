@@ -14,5 +14,14 @@ public class RunOfProgram {
 
         String outPut = testImplement.checkString();
         System.out.println(outPut);
+
+
+
+//        #FFFF00,#FFFACD,#FFFFE0,#FAFAD2,#FFEFD5,#FFE4B5,#FFDAB9,#EEE8AA
+       System.out.println(testImplement.checkSet());
+
+//        1,2,3,4,5,6,7,8,9
+        System.out.println(testImplement.checkRange());
+
     }
 }
