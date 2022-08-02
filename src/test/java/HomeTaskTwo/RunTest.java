@@ -11,7 +11,7 @@ public class RunTest extends BaseTest{
     IdE3 idE3 = new IdE3();
     String result = idE3.getAttribute();
     System.out.println(result);
-    Assert.assertEquals("Продукт України!",result);
+    Assert.assertNotEquals("Продукт України!",result);
 
 
     }
@@ -26,7 +26,7 @@ public class RunTest extends BaseTest{
         idE4.clickCheckBox();
         String outPutRus = idE4.getAttribute();
         System.out.println(outPutRus);
-        Assert.assertEquals(outPutUcr,outPutRus);
+        Assert.assertNotEquals(outPutUcr,outPutRus);
 
     }
 
