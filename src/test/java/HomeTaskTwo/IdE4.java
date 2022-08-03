@@ -16,8 +16,8 @@ public class IdE4 extends BasePage {
     @FindBy(xpath = "//button[@title='evaріанти']")
     WebElement button;
 
-//    @FindBy(xpath = "//span[@class='page-title__total']")
-//    WebElement countValue;
+    @FindBy(xpath = "//span[@class='page-title__total']")
+    WebElement countValue;
 
     @FindBy(xpath = "//span[@class='a-language-switcher__trigger']")
     WebElement checkBox;
