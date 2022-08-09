@@ -1,4 +1,4 @@
-package HomeTaskThree;
+package HomeTaskThreeSelenium;
 
 import java.util.Scanner;
 
