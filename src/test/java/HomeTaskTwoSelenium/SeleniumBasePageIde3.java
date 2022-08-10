@@ -2,7 +2,7 @@ package HomeTaskTwoSelenium;
 
 import org.openqa.selenium.WebDriver;
 
-public class SeleniumBasePage {
+public class SeleniumBasePageIde3 {
     protected static WebDriver driver;
 
 

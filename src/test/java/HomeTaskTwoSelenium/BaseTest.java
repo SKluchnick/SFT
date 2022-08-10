@@ -20,7 +20,7 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-        SeleniumBasePage.setDriver(driver);
+        SeleniumBasePageIde3.setDriver(driver);
 
     }
 

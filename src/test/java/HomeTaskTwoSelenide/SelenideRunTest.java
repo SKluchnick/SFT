@@ -11,7 +11,7 @@ public class SelenideRunTest {
 
     @Test
     public void checkLanguagesOnPage(){
-        MainPage mainPage = new MainPage(BASE_URL);
+        SelenideMainPageIde3 mainPage = new SelenideMainPageIde3(BASE_URL);
         String result = mainPage.getAttribute();
         System.out.println(result);
         Assert.assertEquals(EXPECTED_WORD,result);

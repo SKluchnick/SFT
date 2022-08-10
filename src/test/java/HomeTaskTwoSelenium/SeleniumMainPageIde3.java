@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Ide3 extends SeleniumBasePage {
+public class SeleniumMainPageIde3 extends SeleniumBasePageIde3 {
 
     @FindBy(xpath = "//span[@class='a-language-switcher__trigger']")
     WebElement checkBox;
@@ -13,7 +13,7 @@ public class Ide3 extends SeleniumBasePage {
     WebElement text;
 
 
-    public Ide3() {
+    public SeleniumMainPageIde3() {
         driver.navigate().to("https://eva.ua/ua/brnd-72860/");
         PageFactory.initElements(driver, this);
 
