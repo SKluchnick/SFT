@@ -11,7 +11,7 @@ public class RunTest extends BaseTest{
     Ide3 idE3 = new Ide3();
     String result = idE3.getAttribute();
     System.out.println(result);
-    Assert.assertNotEquals("Продукт України!",result);
+    Assert.assertEquals("Продукт України!",result);
 
 
     }
