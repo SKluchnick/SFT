@@ -4,7 +4,7 @@ import HomeTaskTwoSelenium.Ide4;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-public class RunTest {
+public class RunTest extends BaseTest{
 
     private final static String BASE_URL_Ide3 = "https://eva.ua/ua/brnd-72860/";
     private final static String BASE_URL_Ide4 = "https://eva.ua/ua/";

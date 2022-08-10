@@ -5,7 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-public class MainPageId3 extends BaseTest{
+public class MainPageId3 {
 
 
     private final SelenideElement checkBox = $x("//span[@class='a-language-switcher__trigger']");
