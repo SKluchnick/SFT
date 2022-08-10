@@ -10,13 +10,12 @@ import static com.codeborne.selenide.Selenide.$x;
 public class SelenideMainPageIde3 {
 
 
-    private final SelenideElement checkBox =$x("//span[@class='a-language-switcher__trigger']");
+    private final SelenideElement checkBox = $x("//span[@class='a-language-switcher__trigger']");
 
     private final SelenideElement text = $x("(//span[@class='nav-horizontal__el-title'])[6]");
 
 
-
-    public SelenideMainPageIde3(String url){
+    public SelenideMainPageIde3(String url) {
         Selenide.open(url);
     }
 
@@ -28,7 +27,6 @@ public class SelenideMainPageIde3 {
         return result;
 
     }
-
 
 
 }
