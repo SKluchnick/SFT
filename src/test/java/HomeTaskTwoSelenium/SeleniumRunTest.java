@@ -19,7 +19,7 @@ public class SeleniumRunTest extends BaseTest{
     @Test
     public void checkCount(){
         String enter = "порошок ariel";
-        SeleniumBasePageIde4 idE4 = new SeleniumBasePageIde4();
+        SeleniumMainPageIde4 idE4 = new SeleniumMainPageIde4();
         idE4.enterInput(enter);
         String outPutUcr = idE4.getAttribute();
         System.out.println(outPutUcr);

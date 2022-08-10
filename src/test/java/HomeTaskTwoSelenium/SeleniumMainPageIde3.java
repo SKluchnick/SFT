@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SeleniumMainPageIde3 extends SeleniumBasePageIde3 {
+public class SeleniumMainPageIde3 extends SeleniumBasePage {
 
     @FindBy(xpath = "//span[@class='a-language-switcher__trigger']")
     WebElement checkBox;
