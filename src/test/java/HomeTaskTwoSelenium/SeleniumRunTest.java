@@ -3,7 +3,7 @@ package HomeTaskTwoSelenium;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class RunTest extends BaseTest{
+public class SeleniumRunTest extends BaseTest{
 
 
     @Test

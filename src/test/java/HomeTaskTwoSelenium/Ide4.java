@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Ide4 extends BasePage {
+public class Ide4 extends SeleniumBasePage {
 
     @FindBy(xpath = "//input[@placeholder='Введіть пошуковий запит або код товару']")
     WebElement input;

@@ -18,9 +18,9 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-        BasePage.setDriver(driver);
+        SeleniumBasePage.setDriver(driver);
 
     }
 
