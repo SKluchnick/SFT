@@ -1,4 +1,4 @@
-package HomeTaskThreeSelenium;
+package HomeTaskThree;
 
 public abstract class InputData {
     public abstract String getParameters ();

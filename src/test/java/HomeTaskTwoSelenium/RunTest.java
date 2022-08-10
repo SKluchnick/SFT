@@ -1,4 +1,4 @@
-package HomeTaskTwo;
+package HomeTaskTwoSelenium;
 
 import org.junit.Assert;
 import org.junit.Test;

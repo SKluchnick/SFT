@@ -1,4 +1,4 @@
-package HomeTaskTwo;
+package HomeTaskTwoSelenium;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;

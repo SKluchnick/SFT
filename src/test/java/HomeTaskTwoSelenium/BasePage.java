@@ -1,4 +1,4 @@
-package HomeTaskTwo;
+package HomeTaskTwoSelenium;
 
 import org.openqa.selenium.WebDriver;
 

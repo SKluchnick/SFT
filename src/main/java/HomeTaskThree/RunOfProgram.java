@@ -1,4 +1,4 @@
-package HomeTaskThreeSelenium;
+package HomeTaskThree;
 
 import java.util.List;
 
