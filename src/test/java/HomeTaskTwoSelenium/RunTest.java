@@ -3,15 +3,15 @@ package HomeTaskTwoSelenium;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class RunTestSelenium extends BaseTest{
+public class RunTest extends BaseTest{
 
 
     @Test
     public void checkLanguagesOnPage(){
     Ide3 idE3 = new Ide3();
-//    String result = idE3.getAttribute();
-//    System.out.println(result);
-//    Assert.assertNotEquals("Продукт України!",result);
+    String result = idE3.getAttribute();
+    System.out.println(result);
+    Assert.assertNotEquals("Продукт України!",result);
 
 
     }
