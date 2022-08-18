@@ -2,7 +2,7 @@ package HomeTaskFourSelenium;
 
 import org.openqa.selenium.WebDriver;
 
-public class Hw4SeleniumBasePage {
+public class SeleniumBasePage {
     protected static WebDriver driver;
 
 
