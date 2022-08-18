@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SeleniumMainPageId1708_3 extends SeleniumBasePage {
 
-    @FindBy(xpath = "(//div[@class='sf-input__wrapper'])[1]/input")
+    @FindBy(xpath = "(//div[@class='sf-input__wrapper'])[1]/input[@type='text']")
     WebElement inputTracking;
 
     @FindBy(xpath = "//span[@class='a-language-switcher__trigger a-language-switcher__trigger--on']")
@@ -20,11 +20,12 @@ public class SeleniumMainPageId1708_3 extends SeleniumBasePage {
 
 
     public String getAttributeTwo() {
-        inputTracking.getAttribute("placeholder");
-        String result = inputTracking.getText();
-        return result;
+        String result = inputTracking.getAttribute("placeholder");
+            return result;
 
     }
+
+
 
     public void changeLanguages(){
         checkBox.click();
