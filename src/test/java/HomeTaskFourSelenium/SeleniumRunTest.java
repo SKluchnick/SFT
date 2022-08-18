@@ -3,25 +3,19 @@ package HomeTaskFourSelenium;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SeleniumRunTest extends BaseTest {
-
-
+public class SeleniumRunTest extends Hw4BaseTest {
 
 
     @Test
-    public void checkTextPlaceholders(){
-       Seleniummainpageid1708_3 seleniummainpageid1708_3 = new Seleniummainpageid1708_3();
-        seleniummainpageid1708_3.clickMoveToTrackingPage();
-        SeleniumTrackingPage seleniumTrackingPage = new SeleniumTrackingPage();
-        String placeholder = seleniumTrackingPage.getAttribute();
-        seleniumTrackingPage.changeLanguages();
-        String placeholderTwo = seleniumTrackingPage.getAttribute();
-        Assert.assertNotEquals(placeholder,placeholderTwo);
-
-
-
+    public void checkPlaceholders() {
+        SeleniumMainPageId1708_3 seleniumMainPageId1708_3 = new SeleniumMainPageId1708_3();
+        String outPut = seleniumMainPageId1708_3.getAttributeTwo();
+        System.out.println(outPut);
+        seleniumMainPageId1708_3.changeLanguages();
+        String outPutTwo = seleniumMainPageId1708_3.getAttributeTwo();
+        System.out.println(outPutTwo);
+        Assert.assertNotEquals(outPut,outPutTwo);
 
 
     }
-
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class SeleniumMainPageIde4 extends SeleniumBasePage {
+public class SeleniumMainPageId4 extends SeleniumBasePage {
 
     @FindBy(xpath = "//input[@placeholder='Введіть пошуковий запит або код товару']")
     WebElement input;
@@ -22,7 +22,7 @@ public class SeleniumMainPageIde4 extends SeleniumBasePage {
     WebElement checkBox;
 
 
-    public SeleniumMainPageIde4() {
+    public SeleniumMainPageId4() {
         driver.navigate().to("https://eva.ua/ua/");
         PageFactory.initElements(driver, this);
 

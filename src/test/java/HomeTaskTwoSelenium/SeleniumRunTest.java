@@ -8,7 +8,7 @@ public class SeleniumRunTest extends BaseTest{
 
     @Test
     public void checkLanguagesOnPage(){
-    SeleniumMainPageIde3 idE3 = new SeleniumMainPageIde3();
+    SeleniumMainPageId3 idE3 = new SeleniumMainPageId3();
     String result = idE3.getAttribute();
     System.out.println(result);
     Assert.assertEquals("Продукт України!",result);
@@ -19,7 +19,7 @@ public class SeleniumRunTest extends BaseTest{
     @Test
     public void checkCount(){
         String enter = "порошок ariel";
-        SeleniumMainPageIde4 idE4 = new SeleniumMainPageIde4();
+        SeleniumMainPageId4 idE4 = new SeleniumMainPageId4();
         idE4.enterInput(enter);
         String outPutUcr = idE4.getAttribute();
         System.out.println(outPutUcr);
