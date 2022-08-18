@@ -9,16 +9,18 @@ public class SeleniumRunTest extends BaseTest {
 
 
     @Test
-    public void checkCount(){
-        String enter = "порошок ariel";
-        SeleniumMainPageID1708_5 idE4 = new SeleniumMainPageID1708_5();
-        idE4.enterInput(enter);
-        String outPutUcr = idE4.getAttribute();
-        System.out.println(outPutUcr);
-        idE4.clickCheckBox();
-        String outPutRus = idE4.getAttribute();
-        System.out.println(outPutRus);
-        Assert.assertNotEquals(outPutUcr,outPutRus);
+    public void checkTextPlaceholders(){
+       Seleniummainpageid1708_3 seleniummainpageid1708_3 = new Seleniummainpageid1708_3();
+        seleniummainpageid1708_3.clickMoveToTrackingPage();
+        SeleniumTrackingPage seleniumTrackingPage = new SeleniumTrackingPage();
+        String placeholder = seleniumTrackingPage.getAttribute();
+        seleniumTrackingPage.changeLanguages();
+        String placeholderTwo = seleniumTrackingPage.getAttribute();
+        Assert.assertNotEquals(placeholder,placeholderTwo);
+
+
+
+
 
     }
 
