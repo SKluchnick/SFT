@@ -25,6 +25,12 @@ public class SeleniumMainPageId1708_3 extends SeleniumBasePage {
 
     }
 
+    public String[] getAttribute(){
+        return inputTracking.getAttribute("placeholder").split(":");
+    }
+
+
+
 
     public void changeLanguages() {
         checkBox.click();
