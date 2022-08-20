@@ -20,13 +20,5 @@ public class SeleniumRunTest extends BaseTest {
 
     }
 
-    @Test
-    public void checkCountOfLinks(){
-        SeleniumMainPageId1708_1 seleniumMainPageId1708_1 = new SeleniumMainPageId1708_1();
-        seleniumMainPageId1708_1.clickButton();
-        seleniumMainPageId1708_1.clickLink();
-        String value = seleniumMainPageId1708_1.getValue();
-        System.out.println(value);
 
-    }
 }
