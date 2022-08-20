@@ -20,8 +20,7 @@ public class SeleniumMainPageId1708_3 extends SeleniumBasePage {
 
 
     public String getAttributeTwo() {
-        String result = inputTracking.getAttribute("placeholder");
-        return result;
+        return inputTracking.getAttribute("placeholder");
 
     }
 
