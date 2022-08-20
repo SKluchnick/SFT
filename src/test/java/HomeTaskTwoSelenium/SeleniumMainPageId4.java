@@ -30,15 +30,18 @@ public class SeleniumMainPageId4 extends SeleniumBasePage {
 
     public void enterInput(String enter) {
         input.sendKeys(enter);
+
+    }
+
+    public void clickButton(){
         button.click();
     }
 
-    public String getAttribute() {
+    public String getText() {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         WebElement countValue = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='page-title__total']")));
         String outPut = "";
         while (true) {
-            countValue.getAttribute("value");
             outPut = countValue.getText();
             if (!outPut.equals("0 товарa")) {
                 outPut = countValue.getText();

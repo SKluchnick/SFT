@@ -22,10 +22,11 @@ public class SeleniumRunTest extends BaseTest{
         String enter = "порошок ariel";
         SeleniumMainPageId4 idE4 = new SeleniumMainPageId4();
         idE4.enterInput(enter);
-        String outPutUcr = idE4.getAttribute();
+        idE4.clickButton();
+        String outPutUcr = idE4.getText();
         System.out.println(outPutUcr);
         idE4.clickCheckBox();
-        String outPutRus = idE4.getAttribute();
+        String outPutRus = idE4.getText();
         System.out.println(outPutRus);
         Assert.assertNotEquals(outPutUcr,outPutRus);
 
