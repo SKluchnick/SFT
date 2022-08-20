@@ -22,7 +22,6 @@ public class SeleniumMainPageId3 extends SeleniumBasePage {
 
     public String getAttribute() {
         checkBox.click();
-        text.getAttribute("value");
         String res = text.getText();
         return res;
 
