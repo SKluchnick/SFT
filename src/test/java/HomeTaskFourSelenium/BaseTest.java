@@ -21,8 +21,8 @@ public class BaseTest {
         SeleniumMainPageId1708_3.setDriver(driver);
     }
 
-//    @After
-//    public void tearDown() {
-//        driver.quit();
-//    }
+    @After
+    public void tearDown() {
+        driver.quit();
+    }
 }
