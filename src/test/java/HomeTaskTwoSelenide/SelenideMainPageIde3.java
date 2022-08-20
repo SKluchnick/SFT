@@ -19,11 +19,12 @@ public class SelenideMainPageIde3 {
         Selenide.open(url);
     }
 
+    public void clickCheckBox(){
+        checkBox.click();
+    }
 
     public String getText() {
-        checkBox.click();
-        String result = text.getText();
-        return result;
+        return text.getText();
 
     }
 
