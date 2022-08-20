@@ -19,11 +19,13 @@ public class SeleniumMainPageId3 extends SeleniumBasePage {
 
     }
 
-
-    public String getAttribute() {
+    public void clickCheckBox(){
         checkBox.click();
-        String res = text.getText();
-        return res;
+    }
+
+
+    public String getText() {
+        return text.getText();
 
     }
 

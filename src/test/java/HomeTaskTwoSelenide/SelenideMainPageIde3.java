@@ -20,9 +20,8 @@ public class SelenideMainPageIde3 {
     }
 
 
-    public String getAttribute() {
+    public String getText() {
         checkBox.click();
-        text.getAttribute("value");
         String result = text.getText();
         return result;
 

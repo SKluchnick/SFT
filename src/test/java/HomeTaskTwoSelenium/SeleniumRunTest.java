@@ -9,7 +9,8 @@ public class SeleniumRunTest extends BaseTest{
     @Test
     public void checkLanguagesOnPage(){
     SeleniumMainPageId3 idE3 = new SeleniumMainPageId3();
-    String result = idE3.getAttribute();
+    idE3.clickCheckBox();
+    String result = idE3.getText();
     System.out.println(result);
     Assert.assertEquals("Продукт України!",result);
 
