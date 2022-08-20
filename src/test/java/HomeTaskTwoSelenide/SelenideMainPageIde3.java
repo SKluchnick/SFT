@@ -1,5 +1,6 @@
 package HomeTaskTwoSelenide;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 
@@ -20,7 +21,7 @@ public class SelenideMainPageIde3 {
     }
 
     public void clickCheckBox(){
-        checkBox.click();
+        checkBox.shouldBe(Condition.visible).click();
     }
 
     public String getText() {
