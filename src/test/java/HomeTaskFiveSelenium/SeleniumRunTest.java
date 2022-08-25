@@ -2,6 +2,9 @@ package HomeTaskFiveSelenium;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class SeleniumRunTest extends BaseTest{
 
@@ -22,6 +25,13 @@ public class SeleniumRunTest extends BaseTest{
 
     }
 
-
+    @Test
+    public void checkButton(){
+        CalculatorMainPage calculatorMainPage = new CalculatorMainPage();
+       List<WebElement>elements = calculatorMainPage.buttonText();
+       for (WebElement i:elements){
+           System.out.println(i.getText());
+       }
+    }
 
 }
