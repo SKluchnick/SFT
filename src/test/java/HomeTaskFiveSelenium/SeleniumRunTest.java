@@ -25,6 +25,12 @@ public class SeleniumRunTest extends BaseTest{
 
     }
 
+    @Test
+    public void checkButtonText(){
+        CalculatorMainPage calculatorMainPage = new CalculatorMainPage();
+        calculatorMainPage.buttonText();
+    }
+
 
 
 }

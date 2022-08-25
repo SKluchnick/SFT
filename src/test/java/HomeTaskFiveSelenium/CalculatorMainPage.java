@@ -78,6 +78,15 @@ public class CalculatorMainPage extends SeleniumBasePage {
 
     }
 
+    public List<String> buttonText(){
+        List<WebElement>webElements = driver.findElements(By.xpath("//div[@class='keys']"));
+        List <String>list = new ArrayList<>();
+        for (WebElement i:webElements){
+            list.add(i.getText());
+        }
+        return list;
+    }
+
 
 
 
