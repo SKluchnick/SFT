@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class CalculatorMainPage extends SeleniumBasePage {
 
     @FindBy(xpath = "//span[contains(text(),'7')]")
@@ -31,6 +33,8 @@ public class CalculatorMainPage extends SeleniumBasePage {
     WebElement screen;
     @FindBy(xpath = "//span[@class='clear']")
     WebElement clear;
+    @FindBy(xpath = "//div[@class='keys']")
+    WebElement keys;
 
     public CalculatorMainPage() {
         String urlIndex = CalculatorMainPage.class.getClassLoader().getResource("calculator.html").toExternalForm();
@@ -71,6 +75,12 @@ public class CalculatorMainPage extends SeleniumBasePage {
         equals.click();
         return screen.getText();
 
+    }
+
+    public List<WebElement> buttonText(){
+        List<WebElement> list = driver.findElements(By.xpath("//div[@class='keys']"));
+
+        return list;
     }
 
 
