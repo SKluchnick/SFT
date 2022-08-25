@@ -25,13 +25,6 @@ public class SeleniumRunTest extends BaseTest{
 
     }
 
-    @Test
-    public void checkButton(){
-        CalculatorMainPage calculatorMainPage = new CalculatorMainPage();
-       List<WebElement>elements = calculatorMainPage.buttonText();
-       for (WebElement i:elements){
-           System.out.println(i.getText());
-       }
-    }
+
 
 }
