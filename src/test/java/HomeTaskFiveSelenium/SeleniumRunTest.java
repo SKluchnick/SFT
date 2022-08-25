@@ -13,8 +13,12 @@ public class SeleniumRunTest extends BaseTest{
         calculatorMainPage.clearScreen();
         String resultMinus = calculatorMainPage.minus();
         Assert.assertEquals("1", resultMinus);
-
-
+        calculatorMainPage.clearScreen();
+        String resultDivision = calculatorMainPage.division();
+        Assert.assertNotEquals("2", resultDivision);
+        calculatorMainPage.clearScreen();
+        String resultMultiplication = calculatorMainPage.multiplication();
+        Assert.assertEquals("32", resultMultiplication);
 
     }
 
