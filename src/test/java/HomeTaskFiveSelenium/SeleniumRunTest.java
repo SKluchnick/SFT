@@ -31,9 +31,9 @@ public class SeleniumRunTest extends BaseTest{
     }
 
     @Test
-    public void printButtonText(){
+    public void checkScreen(){
         CalculatorMainPage calculatorMainPage = new CalculatorMainPage();
-        calculatorMainPage.buttonTextPrint();
+        Assert.assertFalse(calculatorMainPage.buttonOperator());
     }
 
 

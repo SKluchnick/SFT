@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class CalculatorMainPage extends SeleniumBasePage {
@@ -75,15 +77,23 @@ public class CalculatorMainPage extends SeleniumBasePage {
 
     }
 
-    public void buttonTextPrint() {
-        List<WebElement> webElements = driver.findElements(By.xpath("//div[@class='keys']"));
-        List<String> list = new ArrayList<>();
-        for (WebElement i : webElements) {
-            list.add(i.getText());
+    public boolean buttonOperator() {
+        List<WebElement> webElements = driver.findElements(By.className("operator"));
+        List<String> arrayList = new ArrayList<>();
+        List<String> arrayList1 = new ArrayList<>();
+        for (int i = 0; i < webElements.size(); i++) {
+            webElements.get(i).click();
+            String res = screen.getText();
+            arrayList.add(res);
+            clearScreen();
+            String res2 = webElements.get(i).getText();
+            arrayList1.add(res2);
         }
-        System.out.println(list);
-
-
+        Collections.sort(arrayList);
+        Collections.sort(arrayList1);
+        System.out.println(arrayList);
+        System.out.println(arrayList1);
+        return arrayList.equals(arrayList1);
     }
 
 
