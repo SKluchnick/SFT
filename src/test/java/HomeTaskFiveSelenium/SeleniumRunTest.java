@@ -8,20 +8,25 @@ import java.util.List;
 
 public class SeleniumRunTest extends BaseTest{
 
+    private final static String EXPECTED_RESULT_15 = "15";
+    private final static String EXPECTED_RESULT_1 = "1";
+    private final static String UNEXPECTED_RESULT_2 = "2";
+    private final static String EXPECTED_RESULT_32 = "32";
+
     @Test
     public void checkMath(){
         CalculatorMainPage calculatorMainPage = new CalculatorMainPage();
         String resultAdd = calculatorMainPage.add();
-        Assert.assertEquals("15", resultAdd);
+        Assert.assertEquals(EXPECTED_RESULT_15, resultAdd);
         calculatorMainPage.clearScreen();
         String resultMinus = calculatorMainPage.minus();
-        Assert.assertEquals("1", resultMinus);
+        Assert.assertEquals(EXPECTED_RESULT_1, resultMinus);
         calculatorMainPage.clearScreen();
         String resultDivision = calculatorMainPage.division();
-        Assert.assertNotEquals("2", resultDivision);
+        Assert.assertNotEquals(UNEXPECTED_RESULT_2, resultDivision);
         calculatorMainPage.clearScreen();
         String resultMultiplication = calculatorMainPage.multiplication();
-        Assert.assertEquals("32", resultMultiplication);
+        Assert.assertEquals(EXPECTED_RESULT_32, resultMultiplication);
 
     }
 

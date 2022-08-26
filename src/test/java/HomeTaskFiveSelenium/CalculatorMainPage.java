@@ -33,6 +33,7 @@ public class CalculatorMainPage extends SeleniumBasePage {
     @FindBy(xpath = "//div[@class='keys']")
     WebElement keys;
 
+
     public CalculatorMainPage() {
         String urlIndex = CalculatorMainPage.class.getClassLoader().getResource("calculator.html").toExternalForm();
         driver.navigate().to(urlIndex);
