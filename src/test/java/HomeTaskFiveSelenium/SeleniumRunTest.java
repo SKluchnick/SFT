@@ -26,9 +26,9 @@ public class SeleniumRunTest extends BaseTest{
     }
 
     @Test
-    public void checkButtonText(){
+    public void printButtonText(){
         CalculatorMainPage calculatorMainPage = new CalculatorMainPage();
-        calculatorMainPage.buttonText();
+        calculatorMainPage.buttonTextPrint();
     }
 
 
