@@ -91,6 +91,18 @@ public class CalculatorMainPage extends SeleniumBasePage {
         return Double.parseDouble(screen.getText());
     }
 
+    public double minusDouble(){
+        buttonEight.click();
+        dot.click();
+        buttonEight.click();
+        minus.click();
+        buttonEight.click();
+        dot.click();
+        buttonEight.click();
+        equals.click();
+        return Double.parseDouble(screen.getText());
+    }
+
     public boolean buttonOperator() {
         List<WebElement> webElements = driver.findElements(By.className("operator"));
         List<String> arrayList = new ArrayList<>();
