@@ -91,8 +91,6 @@ public class CalculatorMainPage extends SeleniumBasePage {
         }
         Collections.sort(arrayList);
         Collections.sort(arrayList1);
-        System.out.println(arrayList);
-        System.out.println(arrayList1);
         return arrayList.equals(arrayList1);
     }
 
