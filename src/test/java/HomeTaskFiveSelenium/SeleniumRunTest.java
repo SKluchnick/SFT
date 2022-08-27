@@ -11,7 +11,8 @@ public class SeleniumRunTest extends BaseTest{
     private final static String EXPECTED_RESULT_32 = "32";
     private final static Double EXPECTED_RESULT_17_6 = 17.6;
     private final static Double EXPECTED_RESULT_0_0 = 0.0;
-    private final static Double EXPECTED_RESULT_DELTA = 0.001;
+    private final static Double EXPECTED_RESULT_DELTA = 2.0;
+    private final static Double EXPECTED_RESULT_1_0 = 1.0;
 
 
     @Test
@@ -28,6 +29,7 @@ public class SeleniumRunTest extends BaseTest{
         calculatorMainPage.clearScreen();
         String resultMultiplication = calculatorMainPage.multiplication();
         Assert.assertEquals(EXPECTED_RESULT_32, resultMultiplication);
+        calculatorMainPage.clearScreen();
 
     }
 
@@ -39,6 +41,10 @@ public class SeleniumRunTest extends BaseTest{
         calculatorMainPage.clearScreen();
         double resultMinusDouble = calculatorMainPage.minusDouble();
         Assert.assertEquals(EXPECTED_RESULT_0_0,resultMinusDouble,EXPECTED_RESULT_DELTA);
+        calculatorMainPage.clearScreen();
+        double resultDivision = calculatorMainPage.divisionDouble();
+        System.out.println(resultDivision);
+        Assert.assertEquals(EXPECTED_RESULT_1_0,resultDivision,EXPECTED_RESULT_DELTA);
         calculatorMainPage.clearScreen();
 
     }
