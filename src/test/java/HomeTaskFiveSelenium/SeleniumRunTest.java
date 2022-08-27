@@ -2,9 +2,6 @@ package HomeTaskFiveSelenium;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class SeleniumRunTest extends BaseTest{
 
@@ -12,9 +9,12 @@ public class SeleniumRunTest extends BaseTest{
     private final static String EXPECTED_RESULT_1 = "1";
     private final static String UNEXPECTED_RESULT_2 = "2";
     private final static String EXPECTED_RESULT_32 = "32";
+    private final static Double EXPECTED_RESULT_17_6 = 17.6;
+    private final static Double EXPECTED_RESULT_DELTA = 0.111;
+
 
     @Test
-    public void checkMath(){
+    public void checkString(){
         CalculatorMainPage calculatorMainPage = new CalculatorMainPage();
         String resultAdd = calculatorMainPage.add();
         Assert.assertEquals(EXPECTED_RESULT_15, resultAdd);
@@ -27,6 +27,14 @@ public class SeleniumRunTest extends BaseTest{
         calculatorMainPage.clearScreen();
         String resultMultiplication = calculatorMainPage.multiplication();
         Assert.assertEquals(EXPECTED_RESULT_32, resultMultiplication);
+
+    }
+
+    @Test
+    public void checkDouble(){
+        CalculatorMainPage calculatorMainPage = new CalculatorMainPage();
+        double resultAddDouble = calculatorMainPage.addDouble();
+        Assert.assertEquals(EXPECTED_RESULT_17_6,resultAddDouble,EXPECTED_RESULT_DELTA);
 
     }
 

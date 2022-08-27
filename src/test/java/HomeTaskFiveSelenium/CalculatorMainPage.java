@@ -28,6 +28,8 @@ public class CalculatorMainPage extends SeleniumBasePage {
     WebElement minus;
     @FindBy(xpath = "//span[contains(text(),'=')]")
     WebElement equals;
+    @FindBy(xpath = "//span[contains(text(),'.')]")
+    WebElement dot;
     @FindBy(xpath = "//div[@class='screen']")
     WebElement screen;
     @FindBy(xpath = "//span[@class='clear']")
@@ -75,6 +77,18 @@ public class CalculatorMainPage extends SeleniumBasePage {
         equals.click();
         return screen.getText();
 
+    }
+
+    public double addDouble(){
+        buttonEight.click();
+        dot.click();
+        buttonEight.click();
+        plus.click();
+        buttonEight.click();
+        dot.click();
+        buttonEight.click();
+        equals.click();
+        return Double.parseDouble(screen.getText());
     }
 
     public boolean buttonOperator() {
