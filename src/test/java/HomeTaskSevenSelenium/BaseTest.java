@@ -1,4 +1,4 @@
-package HomeTaskFiveSelenium;
+package HomeTaskSevenSelenium;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
